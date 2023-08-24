@@ -4,10 +4,8 @@ const btn = document.getElementById('btn')
 const color = document.querySelector('.color')
 
 btn.addEventListener('click', () => {
-    // get random number between for the length of the colors array
+    // get random number between 0-3
     const randNum = Math.round(Math.random() * 3)
     const bgColor = colors[randNum]
-    document.body.style.backgroundColor = bgColor
-    // document.querySelector('#colorName').innerHTML = bgColor
-    color.textContent = bgColor
+    console.log(document.body.background)
 })

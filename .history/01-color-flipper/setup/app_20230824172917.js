@@ -8,6 +8,7 @@ btn.addEventListener('click', () => {
     const randNum = Math.round(Math.random() * 3)
     const bgColor = colors[randNum]
     document.body.style.backgroundColor = bgColor
-    // document.querySelector('#colorName').innerHTML = bgColor
-    color.textContent = bgColor
+
+    let colorName = document.querySelector('#colorName').innerHTML
+    colorName = bgColor
 })
