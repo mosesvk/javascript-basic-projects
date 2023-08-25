@@ -1,11 +1,11 @@
 let count = 0
 
-const value = document.querySelector('#value')
+const value = document.querySelector('#value').textContent
 const buttons = document.querySelectorAll('.btn')
 
 buttons.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        const styles = e.currentTarget.classList
+        console.log(e.currentTarget)
 
         if (styles.contains('decrease')) {
             count -= 1
@@ -15,6 +15,6 @@ buttons.forEach((btn) => {
             count = 0 
         }
 
-        value.textContent = count
+        value = count
     })
 })

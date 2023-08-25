@@ -1,6 +1,6 @@
 let count = 0
 
-const value = document.querySelector('#value')
+let value = document.querySelector('#value').textContent
 const buttons = document.querySelectorAll('.btn')
 
 buttons.forEach((btn) => {
@@ -15,6 +15,6 @@ buttons.forEach((btn) => {
             count = 0 
         }
 
-        value.textContent = count
+        value = count
     })
 })

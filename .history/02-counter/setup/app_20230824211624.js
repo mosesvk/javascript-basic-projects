@@ -5,16 +5,16 @@ const buttons = document.querySelectorAll('.btn')
 
 buttons.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        const styles = e.currentTarget.classList
+        const styles = e.classList.value
 
-        if (styles.contains('decrease')) {
+        if (styles.includes('decrease')) {
             count -= 1
-        } else if (styles.contains('increase')) {
+        } else if (styles.includes('increase')) {
             count += 1
         } else {
             count = 0 
         }
 
-        value.textContent = count
+        console.log(count)
     })
 })
