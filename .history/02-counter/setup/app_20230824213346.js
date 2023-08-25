@@ -2,7 +2,7 @@ let count = 0
 
 const value = document.querySelector('#value')
 const buttons = document.querySelectorAll('.btn')
-let color;
+let color = 'black'
 
 buttons.forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -17,14 +17,10 @@ buttons.forEach((btn) => {
         }
 
         if (count > 0) {
-            color = 'green'
-        } else if (count < 0) {
-            color = 'red'
-        } else {
-            color = 'black'
+
         }
 
-        value.style.color = color
+        console.log(value.classList)
         value.textContent = count
     })
 })
