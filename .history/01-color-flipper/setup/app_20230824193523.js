@@ -5,11 +5,9 @@ const color = document.querySelector('.color')
 
 btn.addEventListener('click', () => {
     // get random number between for the length of the colors array
-    const randNum = Math.floor(Math.random() * colors.length)
+    const randNum = Math.round(Math.random() * colors.length)
     const bgColor = colors[randNum]
-
     document.body.style.backgroundColor = bgColor
-
     // document.querySelector('#colorName').innerHTML = bgColor
     color.textContent = bgColor
 })

@@ -9,7 +9,7 @@ const color = document.querySelector('.color')
     let i = 0
     while (i < 6) {
         let randIdx = Math.floor(Math.random() * hex.length)
-        hexColor += String(hex[randIdx])
+        hexColor += String(hex(randIdx))
         i++
     }
 
